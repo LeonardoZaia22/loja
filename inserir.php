@@ -14,7 +14,8 @@
     
     if ($stmt->execute()) {
         echo "Produto inserido com sucesso!";
-    } else {
+    } 
+    else {
         echo "Erro ao inserir produto.";
     }
 ?>
