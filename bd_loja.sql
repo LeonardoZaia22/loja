@@ -11,7 +11,6 @@ SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
 
-
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
@@ -55,6 +54,15 @@ ALTER TABLE `produtos`
 --
 ALTER TABLE `produtos`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+-- Inserir dados na tabela `produtos`
+INSERT INTO `produtos` (`nome`, `preco`, `quantidade`) VALUES
+('Camiseta Básica', 29.99, 100),
+('Tênis Esportivo', 159.90, 50),
+('Bolsa de Couro', 199.99, 30),
+('Relógio de Pulso', 349.50, 20),
+('Óculos de Sol', 89.90, 75);
+
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
